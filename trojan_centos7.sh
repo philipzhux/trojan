@@ -61,7 +61,7 @@ if [ $real_addr == $local_addr ] ; then
 	#设置伪装站
 	rm -rf /usr/share/nginx/html/*
 	cd /usr/share/nginx/html/
-	wget https://github.com/dajiangfu/trojan/raw/master/web.zip
+	wget https://raw.githubusercontent.com/philipzhux/trojan/master/web.zip
 	unzip web.zip
 	systemctl restart nginx.service
 	#申请https证书
